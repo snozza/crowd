@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.8.1"
+    "react-scripts": "0.8.1",
+    "eslint-plugin-flowtype": "^2.29.1",
+    "flow-bin": "^0.36.0"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "redux": "^3.6.0",
@@ -17,5 +20,64 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "flowtype/boolean-style": [
+        2,
+        "boolean"
+      ],
+      "flowtype/define-flow-type": 1,
+      "flowtype/delimiter-dangle": [
+        2,
+        "never"
+      ],
+      "flowtype/generic-spacing": [
+        2,
+        "never"
+      ],
+      "flowtype/no-weak-types": 2,
+      "flowtype/require-parameter-type": 2,
+      "flowtype/require-return-type": [
+        2,
+        "always",
+        {
+          "annotateUndefined": "never"
+        }
+      ],
+      "flowtype/require-valid-file-annotation": 2,
+      "flowtype/semi": [
+        2,
+        "always"
+      ],
+      "flowtype/space-after-type-colon": [
+        2,
+        "always"
+      ],
+      "flowtype/space-before-generic-bracket": [
+        2,
+        "never"
+      ],
+      "flowtype/space-before-type-colon": [
+        2,
+        "never"
+      ],
+      "flowtype/type-id-match": [
+        2,
+        "^([A-Z][a-z0-9]+)+Type$"
+      ],
+      "flowtype/union-intersection-spacing": [
+        2,
+        "always"
+      ],
+      "flowtype/use-flow-type": 1,
+      "flowtype/valid-syntax": 1
+    },
+    "settings": {
+      "flowtype": {
+        "onlyFilesWithFlowAnnotation": true
+      }
+    }
   }
 }
