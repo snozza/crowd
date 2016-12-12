@@ -8,8 +8,6 @@ import createStore from './redux/store';
 import { Provider } from 'react-redux';
 import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
-import { ReduxAsyncConnect } from 'redux-async-connect';
-
 import 'bootstrap/dist/css/bootstrap.css';
 import getRoutes from './routes';
 
@@ -19,13 +17,7 @@ const history = syncHistoryWithStore(browserHistory, store);
 
 const component = (
   <Router
-    render={(props) =>
-      <ReduxAsyncConnect
-        {...props}
-        helpers={{ client }}
-        filter={item => !item.deferred}
-      />}
-      history={history}
+    history={history}
   >
     {getRoutes()}
   </Router>
