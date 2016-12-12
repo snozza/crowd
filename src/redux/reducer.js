@@ -1,4 +1,7 @@
 /* @flow */
+import { routerReducer } from 'react-router-redux';
+import { combineReducers } from 'redux';
+
 type StateType = {
   list: object
 };
@@ -7,7 +10,7 @@ const initState: StateType = {
   object: { }
 };
 
-const reducer = (state: StateType = initState, action: object): StateType => {
+const billsReducer = (state: StateType = initState, action: object): StateType => {
   switch (action.type) {
     case 'FETCH-BILLS': {
       return state;
@@ -16,4 +19,8 @@ const reducer = (state: StateType = initState, action: object): StateType => {
   }
 }
 
-export default reducer;
+export default combineReducers({
+  routing: routerReducer,
+  bills: billsReducer
+});
+
