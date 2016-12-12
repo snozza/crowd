@@ -6,6 +6,7 @@ import './App.css';
 
 export const menuItems = [
   { url: `/bills`, title: 'Bills', key: 'bills' },
+  { url: `/about`, title: 'About', key: 'about' },
 ];
 
 class App extends Component {
@@ -29,12 +30,25 @@ class App extends Component {
 									<LinkContainer key={menuItem.key} to={menuItem.url}>
 										<NavItem>
 											{menuItem.title}
-										</NavItem>
-									</LinkContainer>
-									);
-							})}
-						</Nav>
-					</Navbar.Collapse>
+                    </NavItem>
+                  </LinkContainer>
+                  );
+              })}
+            </Nav>
+            <Nav pullRight>
+              <LinkContainer to={'/login'}>
+                <NavItem>
+                  Log in
+                </NavItem>
+              </LinkContainer>
+              <LinkContainer to={'/signup'}>
+                <NavItem>
+                  Sign up
+                </NavItem>
+              </LinkContainer>
+            </Nav>
+          </Navbar.Collapse>
+
         </Navbar>
 
         <div className="app-content">
