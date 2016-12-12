@@ -8,8 +8,9 @@ import createStore from './redux/store';
 import { Provider } from 'react-redux';
 import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
-import 'bootstrap/dist/css/bootstrap.css';
 import getRoutes from './routes';
+import 'bootstrap/dist/css/bootstrap.css';
+import './theme/bootstrap.overrides.css';
 
 const dest = document.getElementById('root');
 const store = createStore(client, browserHistory);
