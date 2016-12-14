@@ -17,12 +17,12 @@ export default class HomeIndex extends Component {
           <Carousel { ...carouselSettings }>
             <img 
               className="carousel-img" 
-              src="http://placehold.it/1024x700/ffffff/c0392b/&text=slide1"
+              src="http://placehold.it/1024x700/ffffff/004d66/&text=CrowdLobby"
               alt="carousel" 
             />
             <img 
               className="carousel-img" 
-              src="http://placehold.it/1024x700/ffffff/c0392b/&text=slide2"
+              src="http://placehold.it/1024x700/ffffff/004d66/&text=Explore"
               alt="carousel" 
             />
           </Carousel>

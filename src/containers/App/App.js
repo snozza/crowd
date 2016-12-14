@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { IndexLink } from 'react-router';
 import { LinkContainer } from 'react-router-bootstrap';
-import Helmet from 'react-helmet';
 import './App.css';
 
 export const menuItems = [
@@ -17,7 +16,7 @@ class App extends Component {
 				<Navbar fixedTop>
 					<Navbar.Header>
 						<Navbar.Brand>
-							<IndexLink to={'/'} activeStyle={{ color: '#33e0ff' }}>
+							<IndexLink to={'/'} style={{ color: '#004d66' }} activeStyle={{ color: '#004d66' }}>
 								<div className="brand" />
 								<span className="brand-text">CrowdLobby</span>
 							</IndexLink>
