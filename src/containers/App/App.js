@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { IndexLink } from 'react-router';
 import { LinkContainer } from 'react-router-bootstrap';
+import Helmet from 'react-helmet';
 import './App.css';
 
 export const menuItems = [
@@ -12,15 +13,16 @@ export const menuItems = [
 class App extends Component {
   render() {
     return (
-			<div>
+			<div className="app">
 				<Navbar fixedTop>
 					<Navbar.Header>
 						<Navbar.Brand>
 							<IndexLink to={'/'} activeStyle={{ color: '#33e0ff' }}>
-								<div className="app brand" />
-								<span>CrowdLobby</span>
+								<div className="brand" />
+								<span className="brand-text">CrowdLobby</span>
 							</IndexLink>
 						</Navbar.Brand>
+            <Navbar.Toggle />
 					</Navbar.Header>
 
 					<Navbar.Collapse>
@@ -51,7 +53,7 @@ class App extends Component {
 
         </Navbar>
 
-        <div className="app-content">
+        <div className="content">
           {this.props.children}
         </div>
       </div>
