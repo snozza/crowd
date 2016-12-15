@@ -7,7 +7,7 @@ export default class HomeIndex extends Component {
   render() {
     const { children } = this.props;
     return (
-      <div className="container">
+      <div className="1container">
         <Helmet title="Home" />
         <div className="carousel-container">
           <HomeCarousel />

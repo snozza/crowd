@@ -9,12 +9,12 @@ const DefaultDecorators = [
     component: React.createClass({
       render() {
         return (
-          <div 
+          <div
             onClick={this.handleClick}
           >
-            <AngleLeft 
-              size={80} 
-              style={this.getButtonStyles(this.props.currentSlide === 0 && !this.props.wrapAround)} 
+            <AngleLeft
+              size={80}
+              style={this.getButtonStyles(this.props.currentSlide === 0 && !this.props.wrapAround)}
             />
         </div>
         )
@@ -55,12 +55,12 @@ const DefaultDecorators = [
         }
 
         return (
-          <div 
+          <div
             onClick={this.handleClick}
           >
-            <AngleRight 
-              size={80} 
-              style={this.getButtonStyles(this.props.currentSlide === cellOffsetPosition && 
+            <AngleRight
+              size={80}
+              style={this.getButtonStyles(this.props.currentSlide === cellOffsetPosition &&
                 !this.props.wrapAround)}
               />
           </div>
@@ -120,9 +120,9 @@ const DefaultDecorators = [
         return arr.filter((val) => {
           if (log[val] === undefined) {
             log[val] = val;
-
             return true;
           }
+          return false;
         }).sort();
       },
       getListStyles() {
