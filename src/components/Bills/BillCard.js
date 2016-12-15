@@ -14,6 +14,10 @@ export default (props) => {
       <div className="bill-summary">
         {props.summary}
       </div>
+      <div className="bill-finance-summary">
+        Raised:<strong> {props.raised}</strong>
+        Goal:<strong> {props.raised}</strong>
+      </div>
     </div>
   );
   return props.url ? <Link to={props.url}>{box}</Link> : box;
