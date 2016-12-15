@@ -7,7 +7,7 @@ export default class About extends Component {
   render() {
     const { children } = this.props;
     return (
-      <div className="1container">
+      <div>
         <Helmet title="About" />
         <img
           className="img-responsive about-img-stretched"

@@ -1,16 +1,6 @@
-import React, { Component } from 'react';
-import Helmet from 'react-helmet';
+import { connect } from 'react-redux';
+import { BillsIndex } from '../../components/Bills';
 
-export default class Bills extends Component {
+const ConnectedBills = connect(state => state)(BillsIndex);
 
-  render() {
-    const { children } = this.props;
-    return (
-      <div className="container">
-        <Helmet title="Bills" />
-        Bills Page Placeholder
-        {/* put children here */}
-      </div>
-    );
-  }
-}
+export default ConnectedBills;
