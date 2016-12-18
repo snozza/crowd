@@ -3,9 +3,9 @@ const path = require('path');
 
 const app = new Express();
 
-app.use(`/static`, Express.static(path.join(__dirname, '../client/build/static')));
+app.use(`/static`, Express.static(path.join(__dirname, '../client/build')));
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Error middleware
