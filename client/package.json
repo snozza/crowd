@@ -90,5 +90,6 @@
         "onlyFilesWithFlowAnnotation": true
       }
     }
-  }
+  },
+  "proxy": "http://localhost:3001/"
 }
