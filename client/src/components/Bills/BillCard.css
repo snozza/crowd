@@ -1,13 +1,16 @@
 .bill-card {
   height: 400px;
-  border-radius: 3px;
+  border-radius: 10px;
   border: 1px solid #889daa;
+  border-top: 0;
   margin-bottom: 15px;
   position: relative;
 }
 
 .bill-name {
-  padding: 3px;
+  padding: 5px;
+  border-radius: 10px;
+  min-height: 60px;
   background-color: #98382A;
   color: white;
   margin-bottom: 10px;
@@ -25,11 +28,3 @@
 .bill-finance-summary {
   padding: 3px;
 }
-
-.container-flex {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  max-width: 1040px;
-}
-

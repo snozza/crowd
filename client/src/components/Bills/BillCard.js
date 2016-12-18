@@ -15,8 +15,10 @@ export default (props) => {
         {props.summary}
       </div>
       <div className="bill-finance-summary">
-        Raised:<strong> {props.raised}</strong><br />
-        Goal:<strong> {props.goal}</strong>
+        <strong>Raised:</strong> {props.raised}<br />
+        <strong>Goal:</strong> {props.goal}<br />
+        <strong>Latest Action:</strong> {props.action}<br />
+        <strong>Status:</strong> {props.status}
       </div>
     </div>
   );
